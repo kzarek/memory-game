@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,400;1,400;1,700&display=swap');
+$color1:#C3073F;
+$color2:#1A1A1D;
+$color3:#240090;
+$color4:#4E4E50;
+$color5:#950740;
+$font:Raleway;
+
+
+
+.Navbar{
+    background-color: $color5;
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content:space-around;
+    div{
+        margin:10px;
+        a{
+            text-decoration:none;
+            color:white;
+            cursor:pointer;
+            text-transform: uppercase;
+        }
+    }
+}
+.GameRoom{
+    display:flex;
+}
+
+.Game{
+    width:800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    .MemoryCard{
+        width:100px;
+        height:100px;
+        background-color: pink;
+        margin:10px;
+    }
+    .MemoryCard:hover{
+        background-color:black;
+       
+    }
+}
+.GameRoom{
+    display: flex;
+    flex-direction: column;
+    .GameAndChat{
+        display: flex;
+    }
+}
+
+.Chat{
+    
+    width:250px;
+    height: 400px;
+    display: flex;
+    flex-direction:column;
+    border: 2px solid black;
+    justify-content: space-between;
+    border-radius:10px;
+    background-color: $color4;
+    form{
+        align-self:flex-end;
+        justify-self: flex-end;
+
+      
+    }
+   
+}
+
+
+
+.ChatTitle{
+    background-color: $color5;
+    padding:10px;
+    border-radius:10px;
+    text-transform: uppercase;
+}
+
+.Msg{
+    margin:10px;
+    background-color: $color2;
+    padding:5px;
+    width:70%;
+    border-radius:10px;
+}
+
+.InputAndSend{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        height:30px;
+    }
+    input{
+        margin-left:10px;
+    }
+}
+
+.ActiveGames{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.FrontPage{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+    
+}
+
+body {
+    height:100%;
+    width:100%;
+    margin: 0;
+    overflow: hidden;
+    background-color:$color2;
+    
+
+   
+}
+
+.App{
+    height:100%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    color:white;
+    font-family: $font;
+}
+#Form{
+    // margin-top:200px;
+    height:800px;
+    width:260px;
+    border:1px solid black;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    background-color: $color4;
+    border-radius: 20px;
+    font-size: 20px;
+	font-family: 'Roboto Thin', sans-serif;
+    padding-top:20px;
+    input{
+        border-radius: 5px;
+        margin-top:5px;
+        margin-bottom:30px;
+    }
+
+    
+}
+
+button{
+    margin-top:40px;
+    margin-bottom:20px;
+    margin-left:20px;
+    width: 135px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: $color1;
+    color:white;
+    font-size: 16px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+
+.card{
+    position:relative;
+    img{
+        width:100px;
+        height:100px;
+        border:2px solid white;
+        border-radius:6px;
+    }
+   
+}
+
+.card .front {
+    transform: rotateY(90deg);
+    position:absolute;
+}
+
+.flipped .front{
+    transform: rotateY(0deg)
+}
+
+.card-grid{
+  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr ;
+    grid-gap:20px;
+
+}
+
+.SimpleGame{
+width:100%;
+margin:0
+}
